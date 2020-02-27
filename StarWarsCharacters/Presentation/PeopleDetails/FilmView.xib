@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB" customClass="FilmView" customModule="StarWarsCharacters" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rvd-bP-xWF">
+                    <rect key="frame" x="20" y="10" width="335" height="0.0"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Word count for opening crawl:" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pAf-F3-qBr">
+                    <rect key="frame" x="20" y="33.5" width="335" height="14.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uc6-tm-okn">
+                    <rect key="frame" x="20" y="52" width="335" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="uc6-tm-okn" secondAttribute="trailing" constant="20" id="9HA-sl-HHZ"/>
+                <constraint firstAttribute="trailing" secondItem="pAf-F3-qBr" secondAttribute="trailing" constant="20" id="DSX-yW-K5c"/>
+                <constraint firstAttribute="bottom" secondItem="uc6-tm-okn" secondAttribute="bottom" constant="10" id="Drr-xk-jmc"/>
+                <constraint firstItem="uc6-tm-okn" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="HHe-1q-MyY"/>
+                <constraint firstItem="Rvd-bP-xWF" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="ULU-YO-5Ez"/>
+                <constraint firstItem="uc6-tm-okn" firstAttribute="top" secondItem="pAf-F3-qBr" secondAttribute="bottom" constant="4" id="d9O-Nm-F8N"/>
+                <constraint firstItem="pAf-F3-qBr" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Rvd-bP-xWF" secondAttribute="bottom" constant="4" id="rAp-EI-Kqs"/>
+                <constraint firstItem="Rvd-bP-xWF" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="ua8-ly-izm"/>
+                <constraint firstAttribute="trailing" secondItem="Rvd-bP-xWF" secondAttribute="trailing" constant="20" id="w0e-yh-ag6"/>
+                <constraint firstItem="pAf-F3-qBr" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="w1p-6j-KB9"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="title" destination="Rvd-bP-xWF" id="ZUf-Hq-gKY"/>
+                <outlet property="wordCount" destination="uc6-tm-okn" id="7pL-Ld-57t"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="132"/>
+        </view>
+    </objects>
+</document>
